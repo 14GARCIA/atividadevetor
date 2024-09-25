@@ -119,7 +119,37 @@ namespace HOSP
 
                                 Console.WriteLine("Qual a temperatura do corpo do paciente: ");
                                 fichas[i].TempCorporal = Console.ReadLine();
-
+                                int cle;
+                                Console.WriteLine("Digite qual a classificação de risco do paciente:\n1- atendimento imediato \n2- emergente \n3-urgente \n4- menos urgente \n5-não urgente");
+                                cle=int.Parse(Console.ReadLine());
+                                switch (cle)
+                                {
+                                    case 1:
+                                        {
+                                            fichas[i].ClassifcRisc = "Atendimento imediato";
+                                            break;
+                                        }
+                                    case 2:
+                                        {
+                                            fichas[i].ClassifcRisc = "Emergente";
+                                            break;
+                                        }
+                                    case 3:
+                                        {
+                                            fichas[i].ClassifcRisc = "Urgente";
+                                            break;
+                                        }
+                                    case 4:
+                                        {
+                                            fichas[i].ClassifcRisc = "Menos urgente";
+                                            break;
+                                        }
+                                    case 5:
+                                        {
+                                            fichas[i].ClassifcRisc = "Não urgente";
+                                            break;
+                                        }
+                                }
 
                                 i++; 
                                 Console.WriteLine("Ficha cadastrada com sucesso!");
