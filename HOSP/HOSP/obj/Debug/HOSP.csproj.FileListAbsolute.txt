@@ -1,0 +1,7 @@
+C:\Users\hgarc\source\repos\HOSP\HOSP\bin\Debug\HOSP.exe.config
+C:\Users\hgarc\source\repos\HOSP\HOSP\bin\Debug\HOSP.exe
+C:\Users\hgarc\source\repos\HOSP\HOSP\bin\Debug\HOSP.pdb
+C:\Users\hgarc\source\repos\HOSP\HOSP\obj\Debug\HOSP.csproj.AssemblyReference.cache
+C:\Users\hgarc\source\repos\HOSP\HOSP\obj\Debug\HOSP.csproj.CoreCompileInputs.cache
+C:\Users\hgarc\source\repos\HOSP\HOSP\obj\Debug\HOSP.exe
+C:\Users\hgarc\source\repos\HOSP\HOSP\obj\Debug\HOSP.pdb
