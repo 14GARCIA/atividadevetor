@@ -10,7 +10,8 @@ namespace HOSP
     {
         static void Main(string[] args)
         {
-            Ficha[] fichas = new Ficha[10];
+            Ficha [] fichas = new Ficha[10];
+            Ficha[] lista = new Ficha [10];
             int i = 0;
 
             string ope;
@@ -18,7 +19,7 @@ namespace HOSP
 
             while (true)
             {
-                Console.WriteLine("Escolha a opção  referente ao que voce deseja fazer no sistema: \n1- fazer uma ficha de um paciente \n2-Adicionar uma paciente na fila de espera \n3-Atender um paciente \n q-sair do sistema ");
+                Console.WriteLine("Escolha a opção  referente ao que voce deseja fazer no sistema: \n1- fazer uma ficha de um paciente \n2-Exibir fila de espera \n3-Atender um paciente \n q-sair do sistema ");
                 ope = Console.ReadLine();
                 switch (ope) 
                 {
@@ -119,8 +120,43 @@ namespace HOSP
 
                                 Console.WriteLine("Qual a temperatura do corpo do paciente: ");
                                 fichas[i].TempCorporal = Console.ReadLine();
+                                int cle;
 
-
+                                do {
+                                    Console.WriteLine("Digite qual a classificação de risco do paciente:\n1- atendimento imediato \n2- emergente \n3-urgente \n4- menos urgente \n5-não urgente");
+                                    cle = int.Parse(Console.ReadLine());
+                                    switch (cle)
+                                    {
+                                        case 1:
+                                            {
+                                                fichas[i].ClassifcRisc = "Vermelho";
+                                                break;
+                                            }
+                                        case 2:
+                                            {
+                                                fichas[i].ClassifcRisc = "Laranja";
+                                                break;
+                                            }
+                                        case 3:
+                                            {
+                                                fichas[i].ClassifcRisc = "Amarelo";
+                                                break;
+                                            }
+                                        case 4:
+                                            {
+                                                fichas[i].ClassifcRisc = "Verde";
+                                                break;
+                                            }
+                                        case 5:
+                                            {
+                                                fichas[i].ClassifcRisc = "Azul";
+                                                break;
+                                            }
+                                        default:
+                                            Console.WriteLine("erro");
+                                            break;
+                                    }
+                                }while(true);
                                 i++; 
                                 Console.WriteLine("Ficha cadastrada com sucesso!");
       
@@ -180,6 +216,82 @@ namespace HOSP
                             }
                     case "2":
                         {
+                            for( int j = 0; j <= 11; j++)
+                            {
+
+                                if (fichas[j].classficRisc = "Vermelho")
+                                {
+                                    if (lista[j].classficRisc == "")
+                                    {
+                                  
+                                    lista[j] = fichas[j];
+                                     }
+                                    else
+                                    {
+                                        lista[j+1]= fichas[j];
+                                    }
+                                    
+                                }
+                                else if (fichas[j].classficRisc = "Laranja")
+                                {
+
+                                     
+                                    if (lista[j].classficRisc == "")
+                                    {
+
+                                        lista[j] = fichas[j];
+                                    }
+                                    else
+                                    {
+                                        lista[j + 1] = fichas[j];
+                                    }
+                                }
+                                else if (fichas[j].classficRisc = "Amarelo")
+                                {
+                                    if (lista[j].classficRisc == "")
+                                    {
+
+                                        lista[j] = fichas[j];
+                                    }
+                                    else
+                                    {
+                                        lista[j + 1] = fichas[j];
+                                    }
+
+                                }
+                                else if (fichas[j].classficRisc = "Verde")
+                                {
+                                    if (lista[j].classficRisc == "")
+                                    {
+
+                                        lista[j] = fichas[j];
+                                    }
+                                    else
+                                    {
+                                        lista[j + 1] = fichas[j];
+                                    }
+
+                                }
+                                 else if  (fichas[j].classficRisc = "Azul")
+                                {
+
+                                    if (lista[j].classficRisc == "")
+                                    {
+
+                                        lista[j] = fichas[j];
+                                    }
+                                    else
+                                    {
+                                        lista[j + 1] = fichas[j];
+                                    }
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Erro,  Entre em Contato com o engenheiro do software");
+                                }
+
+
+                            }
 
                             break;
                         }

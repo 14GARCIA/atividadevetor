@@ -15,7 +15,7 @@ namespace HOSP
         protected string dataNasc;
         protected int dia;
         protected int mes;
-        protected int anp;
+        protected int ano;
         protected string cep;
         protected string rua;
         protected string bairro;
@@ -27,6 +27,7 @@ namespace HOSP
         protected double altura;
         protected double peso;
         protected int numeroCasa;
+        protected string classficRisc;
         protected int idade;
         protected string complemento;
         
@@ -52,7 +53,7 @@ namespace HOSP
         public string Sintomas {  get; set; }   
         public string TempoSintomas {  get; set; }  
         public string TempCorporal { get; set;}
-
+        public string ClassifcRisc {  get; set; }
         public string Complemento { get; set; } 
 
 
